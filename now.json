@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/:username",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/join/:username",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/fund",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/wren-climate-fund",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    }
+  ]
+}
